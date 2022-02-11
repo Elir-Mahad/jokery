@@ -1,10 +1,16 @@
 import React from "react";
+import { JokecardBox, JokeIcon, JokeNicons, JokeText } from "../../Styles";
 
 function JokeCard() {
   return (
-    <div>
-      <h1>Joke card</h1>
-    </div>
+    <JokecardBox>
+      <JokeNicons>
+        <JokeText>
+          why do python programmers wear glasses? Because they can't C.
+        </JokeText>
+        <JokeIcon>icon</JokeIcon>
+      </JokeNicons>
+    </JokecardBox>
   );
 }
 
