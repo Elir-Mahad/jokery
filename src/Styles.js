@@ -74,3 +74,21 @@ export const FooterBox = styled.div`
 export const FooterText = styled.p`
   text-align: center;
 `;
+
+// Settings
+
+export const JokeTypeBox = styled.div`
+  //
+`;
+
+export const JtOption = styled.div`
+  //
+`;
+
+export const JtName = styled.div`
+  //
+`;
+
+export const JtInput = styled.input`
+  //
+`;
