@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Settings from "./components/Settings";
 
 function App() {
   return (
     <div className="App">
-      <h1>Jokery</h1>
-      <Landing />
-      <Settings />
+      <Router>
+        <Routes>
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
