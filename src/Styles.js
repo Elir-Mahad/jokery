@@ -31,6 +31,7 @@ export const JokecardBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 `;
 
 export const JokeNicons = styled.div`
@@ -60,10 +61,16 @@ export const ShowJoke = styled.button`
   font-size: 1.2rem;
 `;
 
+// Footer
+
 export const FooterBox = styled.div`
-  //
+  margin-top: 3rem;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 `;
 
 export const FooterText = styled.p`
-  //
+  text-align: center;
 `;
