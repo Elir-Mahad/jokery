@@ -5,9 +5,8 @@ function JokeCard() {
   return (
     <JokecardBox>
       <JokeNicons>
-        <JokeText>
-          why do python programmers wear glasses? Because they can't C.
-        </JokeText>
+        <JokeText>why do python programmers wear glasses?</JokeText>
+        <JokeText>Because they can't C.</JokeText>
         <JokeIcon>
           <FiTwitter />
         </JokeIcon>
