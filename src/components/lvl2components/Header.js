@@ -8,14 +8,19 @@ import {
 } from "../../Styles";
 import logoimage from "../../assets/logo.png";
 import { AiOutlineSetting } from "react-icons/ai";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <HeaderBox>
       <LogoSettings>
-        <Logo src={logoimage} />
-        <SettingsIcon>
-          <AiOutlineSetting />
-        </SettingsIcon>
+        <Link to="/">
+          <Logo src={logoimage} />
+        </Link>
+        <Link to="/settings">
+          <SettingsIcon>
+            <AiOutlineSetting />
+          </SettingsIcon>
+        </Link>
       </LogoSettings>
       <Heading>Jokery</Heading>
     </HeaderBox>
