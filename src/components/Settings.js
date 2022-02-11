@@ -66,6 +66,20 @@ function Settings() {
           </OneSet>
         </SetOptions>
       </SetBox>
+      {/*  */}
+      <SetBox>
+        <SetHeading> Choose a rating</SetHeading>
+        <SetOptions>
+          <OneSet>
+            <OsName>General</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+          <OneSet>
+            <OsName>R-rated</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+        </SetOptions>
+      </SetBox>
     </SettingsPage>
   );
 }
