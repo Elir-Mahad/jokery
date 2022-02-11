@@ -124,3 +124,7 @@ export const OsName = styled.div`
 export const OsInput = styled.input`
   //
 `;
+
+export const SaveButton = styled.button`
+  //
+`;
