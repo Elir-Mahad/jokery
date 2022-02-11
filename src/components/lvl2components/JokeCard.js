@@ -16,8 +16,8 @@ function JokeCard() {
         <JokeIcon>
           <FiTwitter />
         </JokeIcon>
-        <ShowJoke>Show joke</ShowJoke>
       </JokeNicons>
+      <ShowJoke>Show joke</ShowJoke>
     </JokecardBox>
   );
 }

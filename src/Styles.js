@@ -54,5 +54,8 @@ export const JokeIcon = styled.button`
 `;
 
 export const ShowJoke = styled.button`
-  //
+  margin-top: 3rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
 `;
