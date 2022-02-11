@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+//  Header
+
 export const HeaderBox = styled.div`
   border: 1px solid red;
 `;
@@ -21,4 +23,32 @@ export const SettingsIcon = styled.button`
 
 export const Heading = styled.h2`
   text-align: center;
+`;
+
+// Joke card
+
+export const JokecardBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const JokeNicons = styled.div`
+  border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 1rem;
+`;
+
+export const JokeText = styled.p`
+  font-size: 2rem;
+  text-align: center;
+`;
+
+export const JokeIcon = styled.button`
+  display: block;
+  margin: auto;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
 `;
