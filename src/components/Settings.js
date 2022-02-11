@@ -26,6 +26,46 @@ function Settings() {
           </OneSet>
         </SetOptions>
       </SetBox>
+      {/*  */}
+      <SetBox>
+        <SetHeading> Choose a category</SetHeading>
+        <SetOptions>
+          <OneSet>
+            <OsName>Any</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+          <OneSet>
+            <OsName>Programming</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+        </SetOptions>
+        <SetOptions>
+          <OneSet>
+            <OsName>Dark</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+          <OneSet>
+            <OsName>Pun</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+        </SetOptions>
+        <SetOptions>
+          <OneSet>
+            <OsName>Spooky</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+          <OneSet>
+            <OsName>Christmas</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+        </SetOptions>
+        <SetOptions>
+          <OneSet>
+            <OsName>Miscellaneous</OsName>
+            <OsInput type="checkbox" value="" id="" name="" />
+          </OneSet>
+        </SetOptions>
+      </SetBox>
     </SettingsPage>
   );
 }
