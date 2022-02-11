@@ -1,10 +1,11 @@
 import React from "react";
+import { FooterBox, FooterText } from "../../Styles";
 
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <FooterBox>
+      <FooterText> © Mahad, 2020 · Data courtesy of jokeapi.dev </FooterText>
+    </FooterBox>
   );
 }
 
