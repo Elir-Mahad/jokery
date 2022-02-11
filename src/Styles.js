@@ -77,18 +77,48 @@ export const FooterText = styled.p`
 
 // Settings
 
-export const JokeTypeBox = styled.div`
+export const SettingsPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-contents: center;
+`;
+
+export const SetBox = styled.div`
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 20rem;
+  font-size: 1.4rem;
+`;
+
+export const SetHeading = styled.p`
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 12rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+`;
+
+export const SetOptions = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const OneSet = styled.div`
+  display: flex;
+  align-items: flex-end;
+`;
+
+export const OsName = styled.div`
   //
 `;
 
-export const JtOption = styled.div`
-  //
-`;
-
-export const JtName = styled.div`
-  //
-`;
-
-export const JtInput = styled.input`
+export const OsInput = styled.input`
   //
 `;
