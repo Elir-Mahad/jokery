@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./lvl2components/Footer";
 import Header from "./lvl2components/Header";
 import JokeCard from "./lvl2components/JokeCard";
 
@@ -7,6 +8,7 @@ function Landing() {
     <div>
       <Header />
       <JokeCard />
+      <Footer />
     </div>
   );
 }
