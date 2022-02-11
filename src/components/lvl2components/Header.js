@@ -7,12 +7,15 @@ import {
   Heading,
 } from "../../Styles";
 import logoimage from "../../assets/logo.png";
+import { AiOutlineSetting } from "react-icons/ai";
 function Header() {
   return (
     <HeaderBox>
       <LogoSettings>
         <Logo src={logoimage} />
-        <SettingsIcon>x</SettingsIcon>
+        <SettingsIcon>
+          <AiOutlineSetting />
+        </SettingsIcon>
       </LogoSettings>
       <Heading>Jokery</Heading>
     </HeaderBox>
