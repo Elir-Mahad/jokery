@@ -1,6 +1,6 @@
 import React from "react";
 import { JokecardBox, JokeIcon, JokeNicons, JokeText } from "../../Styles";
-
+import { FiTwitter } from "react-icons/fi";
 function JokeCard() {
   return (
     <JokecardBox>
@@ -8,7 +8,9 @@ function JokeCard() {
         <JokeText>
           why do python programmers wear glasses? Because they can't C.
         </JokeText>
-        <JokeIcon>icon</JokeIcon>
+        <JokeIcon>
+          <FiTwitter />
+        </JokeIcon>
       </JokeNicons>
     </JokecardBox>
   );
