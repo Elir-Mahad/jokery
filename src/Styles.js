@@ -52,3 +52,7 @@ export const JokeIcon = styled.button`
   background-color: transparent;
   border: none;
 `;
+
+export const ShowJoke = styled.button`
+  //
+`;
