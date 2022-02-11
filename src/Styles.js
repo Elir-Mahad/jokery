@@ -59,3 +59,11 @@ export const ShowJoke = styled.button`
   height: 3rem;
   font-size: 1.2rem;
 `;
+
+export const FooterBox = styled.div`
+  //
+`;
+
+export const FooterText = styled.p`
+  //
+`;
