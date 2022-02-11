@@ -1,5 +1,11 @@
 import React from "react";
-import { HeaderBox, LogoSettings, Logo, SettingsIcon } from "../../Styles";
+import {
+  HeaderBox,
+  LogoSettings,
+  Logo,
+  SettingsIcon,
+  Heading,
+} from "../../Styles";
 import logoimage from "../../assets/logo.png";
 function Header() {
   return (
@@ -8,6 +14,7 @@ function Header() {
         <Logo src={logoimage} />
         <SettingsIcon>x</SettingsIcon>
       </LogoSettings>
+      <Heading>Jokery</Heading>
     </HeaderBox>
   );
 }
