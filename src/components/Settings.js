@@ -7,6 +7,8 @@ import {
   OneSet,
   OsInput,
   OsName,
+  SaveButton,
+  SaveButtonBox,
 } from "../Styles";
 
 function Settings() {
@@ -80,6 +82,10 @@ function Settings() {
           </OneSet>
         </SetOptions>
       </SetBox>
+      {/*  */}
+      <SaveButtonBox>
+        <SaveButton>Save</SaveButton>
+      </SaveButtonBox>
     </SettingsPage>
   );
 }

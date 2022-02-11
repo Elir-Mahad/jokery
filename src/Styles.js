@@ -125,6 +125,19 @@ export const OsInput = styled.input`
   //
 `;
 
+export const SaveButtonBox = styled.div`
+  border-top: 1px solid black;
+  width: 25rem;
+  padding: 1rem;
+  padding-top: 2rem;
+`;
+
 export const SaveButton = styled.button`
-  //
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border: 1px solid black;
 `;
