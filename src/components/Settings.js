@@ -9,12 +9,13 @@ import {
   OsName,
   SaveButton,
   SaveButtonBox,
+  SettingsPageHeading,
 } from "../Styles";
 
 function Settings() {
   return (
     <SettingsPage>
-      <h1>Settings</h1>
+      <SettingsPageHeading>Settings</SettingsPageHeading>
       <SetBox>
         <SetHeading> Choose a type</SetHeading>
         <SetOptions>

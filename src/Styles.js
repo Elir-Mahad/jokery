@@ -84,6 +84,10 @@ export const SettingsPage = styled.div`
   justify-contents: center;
 `;
 
+export const SettingsPageHeading = styled.h1`
+  margin-bottom: 2rem;
+`;
+
 export const SetBox = styled.div`
   border-top: 1px solid black;
   border-left: 1px solid black;
