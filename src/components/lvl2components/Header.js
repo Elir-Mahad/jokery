@@ -1,10 +1,14 @@
 import React from "react";
-
+import { HeaderBox, LogoSettings, Logo, SettingsIcon } from "../../Styles";
+import logoimage from "../../assets/logo.png";
 function Header() {
   return (
-    <div>
-      <h1>header</h1>
-    </div>
+    <HeaderBox>
+      <LogoSettings>
+        <Logo src={logoimage} />
+        <SettingsIcon>x</SettingsIcon>
+      </LogoSettings>
+    </HeaderBox>
   );
 }
 
