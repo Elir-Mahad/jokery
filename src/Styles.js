@@ -85,11 +85,13 @@ export const SettingsPage = styled.div`
 `;
 
 export const SetBox = styled.div`
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
-  width: 20rem;
+  width: 25rem;
   font-size: 1.4rem;
 `;
 
@@ -116,7 +118,7 @@ export const OneSet = styled.div`
 `;
 
 export const OsName = styled.div`
-  //
+  width: 10rem;
 `;
 
 export const OsInput = styled.input`
