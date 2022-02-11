@@ -1,5 +1,11 @@
 import React from "react";
-import { JokecardBox, JokeIcon, JokeNicons, JokeText } from "../../Styles";
+import {
+  JokecardBox,
+  JokeIcon,
+  JokeNicons,
+  JokeText,
+  ShowJoke,
+} from "../../Styles";
 import { FiTwitter } from "react-icons/fi";
 function JokeCard() {
   return (
@@ -10,6 +16,7 @@ function JokeCard() {
         <JokeIcon>
           <FiTwitter />
         </JokeIcon>
+        <ShowJoke>Show joke</ShowJoke>
       </JokeNicons>
     </JokecardBox>
   );
