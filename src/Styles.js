@@ -12,7 +12,7 @@ export const Logo = styled.img`
   //
 `;
 
-export const Settings = styled.button`
+export const SettingsIcon = styled.button`
   //
 `;
 
