@@ -151,7 +151,7 @@ function SettingsCard() {
                 <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
             </SetOptions>
-            <SetOptions>
+            {/* <SetOptions>
               <OneSet>
                 <OsName>Spooky</OsName>
                 <OsInput onClick={changeToSpooky} type="checkbox" />
@@ -160,7 +160,7 @@ function SettingsCard() {
                 <OsName>Christmas</OsName>
                 <OsInput onClick={changeToChristmas} type="checkbox" />
               </OneSet>
-            </SetOptions>
+            </SetOptions> */}
             <SetOptions>
               <OneSet>
                 <OsName>Miscellaneous</OsName>
