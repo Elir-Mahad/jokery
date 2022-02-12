@@ -66,6 +66,10 @@ function SettingsCard() {
     setJokeType("single");
   };
 
+  // manage categries
+
+  const [jokeCat, setJokeCat] = useState("any");
+
   return (
     <div>
       {settingContainer && (
