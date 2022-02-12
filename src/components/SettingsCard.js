@@ -196,6 +196,7 @@ function SettingsCard() {
               <JokeText>{jokeSetup}</JokeText>
               <JokeText>{jokeDelivery}</JokeText>
             </div>
+            <Joke>{fullJoke}</Joke>
             <JokeIcon>
               <FiTwitter />
             </JokeIcon>
