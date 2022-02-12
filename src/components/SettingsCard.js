@@ -138,7 +138,7 @@ function SettingsCard() {
               </OneSet>
               <OneSet>
                 <OsName>Programming</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
             </SetOptions>
             <SetOptions>
@@ -196,7 +196,7 @@ function SettingsCard() {
               <JokeText>{jokeSetup}</JokeText>
               <JokeText>{jokeDelivery}</JokeText>
             </div>
-            <Joke>{fullJoke}</Joke>
+            <JokeText>{fullJoke}</JokeText>
             <JokeIcon>
               <FiTwitter />
             </JokeIcon>
