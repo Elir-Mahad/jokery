@@ -158,6 +158,9 @@ export const SettingsPageHeading = styled.h2`
 
 export const SetBox = styled.div`
   width: 25rem;
+  @media (max-width: 500px) {
+    width: 15rem;
+  }
 `;
 
 export const SetHeading = styled.p`
@@ -165,6 +168,9 @@ export const SetHeading = styled.p`
   margin-bottom: 1.5rem;
   padding: 0.2rem;
   font-size: 1.5rem;
+  @media (max-width: 500px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export const SetOptions = styled.div`
@@ -184,6 +190,9 @@ export const OneSet = styled.div`
 
 export const OsName = styled.p`
   font-size: 1.2rem;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 export const OsInput = styled.input`
@@ -194,6 +203,9 @@ export const SaveButtonBox = styled.div`
   width: 25rem;
   padding: 1rem;
   padding-top: 2rem;
+  @media (max-width: 500px) {
+    width: 15rem;
+  }
 `;
 
 export const SaveButton = styled.button`
@@ -204,4 +216,8 @@ export const SaveButton = styled.button`
   border: 1px solid black;
   border-radius: 1rem;
   cursor: pointer;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+    height: 3rem;
+  }
 `;
