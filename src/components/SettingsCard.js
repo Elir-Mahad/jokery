@@ -128,7 +128,7 @@ function SettingsCard() {
           </SetBox>
           {/*  */}
           <SaveButtonBox>
-            <SaveButton>Save</SaveButton>
+            <SaveButton onClick={hideSet}>Save</SaveButton>
           </SaveButtonBox>
         </SettingsPage>
       )}
