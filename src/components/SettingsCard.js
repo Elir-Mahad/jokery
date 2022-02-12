@@ -62,6 +62,10 @@ function SettingsCard() {
     setJokeType("twopart");
   };
 
+  const changeToOnePartJk = () => {
+    setJokeType("single");
+  };
+
   return (
     <div>
       {settingContainer && (
