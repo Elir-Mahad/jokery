@@ -40,6 +40,19 @@ function SettingsCard() {
   const [jokeDelivery, setJokeDelivery] = useState("");
   const [fullJoke, setFullJoke] = useState("");
 
+  //
+
+  const getJoke = () => {
+    Axios.get(
+      `https://v2.jokeapi.dev/joke/${jokeCat}?blacklistFlags=${rating}&type=${jokeType}`
+    ).then((response) => {
+      console.log(response);
+      setJokeSetup(response.data.setup);
+      setJokeDelivery(response.data.delivery);
+      setFullJoke(response.data.joke);
+    });
+  };
+
   return (
     <div>
       {settingContainer && (
