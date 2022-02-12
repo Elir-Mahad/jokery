@@ -144,7 +144,7 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsName>Dark</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToDark} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsName>Pun</OsName>
