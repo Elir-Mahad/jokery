@@ -54,6 +54,10 @@ function SettingsCard() {
     });
   };
 
+  // manage joke types
+
+  const [jokeType, setJokeType] = useState("single");
+
   return (
     <div>
       {settingContainer && (
