@@ -78,6 +78,10 @@ function SettingsCard() {
     setJokeCat("misc");
   };
 
+  const changeToDark = () => {
+    setJokeCat("dark");
+  };
+
   return (
     <div>
       {settingContainer && (
