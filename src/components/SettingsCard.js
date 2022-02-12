@@ -137,9 +137,9 @@ function SettingsCard() {
     <div>
       {settingContainer && (
         <SettingsPage>
-          <SettingsPageHeading>Settings</SettingsPageHeading>
+          {/* <SettingsPageHeading>Settings</SettingsPageHeading> */}
           <SetBox>
-            <SetHeading> Choose a type</SetHeading>
+            <SetHeading> Choose a joke type</SetHeading>
             <SetOptions>
               <OneSet>
                 <OsName>Two part</OsName>
@@ -153,7 +153,7 @@ function SettingsCard() {
           </SetBox>
           {/*  */}
           <SetBox>
-            <SetHeading> Choose a category</SetHeading>
+            <SetHeading> Choose a joke category</SetHeading>
             <SetOptions>
               <OneSet>
                 <OsName>Any</OsName>
@@ -193,7 +193,7 @@ function SettingsCard() {
           </SetBox>
           {/*  */}
           <SetBox>
-            <SetHeading> Choose a rating</SetHeading>
+            <SetHeading> Choose a joke rating</SetHeading>
             <SetOptions>
               <OneSet>
                 <OsName>General</OsName>
