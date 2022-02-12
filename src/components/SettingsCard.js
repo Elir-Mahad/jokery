@@ -70,6 +70,10 @@ function SettingsCard() {
 
   const [jokeCat, setJokeCat] = useState("any");
 
+  const changeToProgramming = () => {
+    setJokeCat("programming");
+  };
+
   return (
     <div>
       {settingContainer && (
