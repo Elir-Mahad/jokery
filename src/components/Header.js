@@ -3,7 +3,7 @@ import { HeaderBox, Heading } from "../Styles";
 function Header() {
   return (
     <HeaderBox>
-      <Heading>Jokery</Heading>
+      <Heading>Welcome to Jokery</Heading>
     </HeaderBox>
   );
 }

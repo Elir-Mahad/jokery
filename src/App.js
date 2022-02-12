@@ -3,14 +3,15 @@ import "./App.css";
 import Header from "./components/Header";
 import SettingsCard from "./components/SettingsCard";
 import Footer from "./components/Footer";
+import { WholeApp } from "./Styles";
 
 function App() {
   return (
-    <div className="App">
+    <WholeApp>
       <Header />
       <SettingsCard />
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </WholeApp>
   );
 }
 

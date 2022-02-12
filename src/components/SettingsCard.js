@@ -17,6 +17,11 @@ import {
   JokeText,
   ShowJoke,
   Reset,
+  JcHead,
+  JcWrapper,
+  JcBottom,
+  JokeWords,
+  JokeSetupDelivery,
 } from "../Styles";
 import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
@@ -191,16 +196,22 @@ function SettingsCard() {
       {/*  */}
       {jokeContainer && (
         <JokecardBox>
-          <JokeNicons>
-            <div>
-              <JokeText>{jokeSetup}</JokeText>
-              <JokeText>{jokeDelivery}</JokeText>
-            </div>
-            <JokeText>{fullJoke}</JokeText>
-            <JokeIcon>
-              <FiTwitter />
-            </JokeIcon>
-          </JokeNicons>
+          <JcWrapper>
+            <JcHead></JcHead>
+            <JokeNicons>
+              <JokeWords>
+                <JokeSetupDelivery>
+                  <JokeText>{jokeSetup}</JokeText>
+                  <JokeText>{jokeDelivery}</JokeText>
+                </JokeSetupDelivery>
+                <JokeText>{fullJoke}</JokeText>
+              </JokeWords>
+              <JokeIcon>
+                <FiTwitter />
+              </JokeIcon>
+            </JokeNicons>
+            <JcBottom></JcBottom>
+          </JcWrapper>
           <ShowJoke onClick={getJoke}>Show joke</ShowJoke>
           <Reset onClick={showSet}>Reset</Reset>
         </JokecardBox>
