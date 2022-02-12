@@ -74,6 +74,10 @@ function SettingsCard() {
     setJokeCat("programming");
   };
 
+  const changeToMisc = () => {
+    setJokeCat("misc");
+  };
+
   return (
     <div>
       {settingContainer && (
