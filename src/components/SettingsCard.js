@@ -119,11 +119,11 @@ function SettingsCard() {
             <SetHeading> Choose a type</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>2 lines</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsName>Two part</OsName>
+                <OsInput onClick={changeToTwoPartJk} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>1 line</OsName>
+                <OsName>Single</OsName>
                 <OsInput type="checkbox" value="" id="" name="" />
               </OneSet>
             </SetOptions>
