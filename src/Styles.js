@@ -18,6 +18,9 @@ export const Heading = styled.h2`
   text-align: center;
   position: relative;
   top: 12px;
+  @media (max-width: 500px) {
+    font-size: 1.4rem;
+  }
 `;
 
 // Joke card
@@ -38,6 +41,10 @@ export const JcWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: -7rem;
+  @media (max-width: 500px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const JcHead = styled.div`
@@ -48,6 +55,9 @@ export const JcHead = styled.div`
   height: 4.4rem;
   border-radius: 2rem;
   margin-bottom: -3.6rem;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const JokeNicons = styled.div`
@@ -58,6 +68,9 @@ export const JokeNicons = styled.div`
   background-color: white;
   position: relative;
   z-index: 3;
+  @media (max-width: 500px) {
+    width: 95%;
+  }
   //
 `;
 
@@ -81,10 +94,13 @@ export const JokeFullOneLine = styled.div`
 `;
 
 export const JokeText = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   margin-bottom: 1rem;
   padding: 1rem;
+  @media (max-width: 500px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const JcBottom = styled.div`
@@ -96,6 +112,9 @@ export const JcBottom = styled.div`
   border-radius: 2rem;
   margin-top: -3.6rem;
   z-index: 1;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const JokeIcon = styled.button`
@@ -114,6 +133,11 @@ export const ShowJoke = styled.button`
   border: 1px solid black;
   font-size: 1.2rem;
   cursor: pointer;
+  @media (max-width: 500px) {
+    width: 12rem;
+    font-size: 1rem;
+    height: 3rem;
+  }
 `;
 
 export const Reset = styled.button`
@@ -124,6 +148,11 @@ export const Reset = styled.button`
   border-radius: 2rem;
   border: 1px solid black;
   cursor: pointer;
+  @media (max-width: 500px) {
+    width: 8rem;
+    font-size: 1rem;
+    height: 3rem;
+  }
 `;
 
 // Footer
@@ -131,6 +160,10 @@ export const Reset = styled.button`
 export const FooterBox = styled.div`
   margin-top: 3rem;
   border-top: 1px solid black;
+  width: 100%;
+  // @media (max-width: 500px) {
+  //   font-size: 1.4rem;
+  // }
 `;
 
 export const FooterText = styled.p`
@@ -159,7 +192,7 @@ export const SettingsPageHeading = styled.h2`
 export const SetBox = styled.div`
   width: 25rem;
   @media (max-width: 500px) {
-    width: 15rem;
+    width: 100%;
   }
 `;
 
@@ -170,11 +203,15 @@ export const SetHeading = styled.p`
   font-size: 1.5rem;
   @media (max-width: 500px) {
     font-size: 1.3rem;
+    padding-left: 1rem;
   }
 `;
 
 export const SetOptions = styled.div`
-  //
+  @media (max-width: 500px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const OneSet = styled.div`
