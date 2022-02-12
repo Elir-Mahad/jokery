@@ -148,7 +148,7 @@ function SettingsCard() {
               </OneSet>
               <OneSet>
                 <OsName>Pun</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
             </SetOptions>
             <SetOptions>
