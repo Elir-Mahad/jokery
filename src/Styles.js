@@ -7,11 +7,11 @@ export const WholeApp = styled.div`
 //  Header
 
 export const HeaderBox = styled.div`
-  border-bottom: 5px solid black;
+  border-bottom: 1px solid black;
   padding-bottom: 8rem;
   padding-top: 2rem;
   position: relative;
-  background-color: lightblue;
+  background-color: lightgrey;
 `;
 
 export const Heading = styled.h2`
@@ -67,14 +67,23 @@ export const JokeWords = styled.div`
 `;
 
 export const JokeSetupDelivery = styled.div`
-  //
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`;
+
+export const JokeFullOneLine = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 `;
 
 export const JokeText = styled.p`
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  border-bottom: 1px solid black;
   padding: 1rem;
 `;
 
@@ -99,30 +108,38 @@ export const JokeIcon = styled.button`
 
 export const ShowJoke = styled.button`
   margin-top: 3rem;
-  width: 10rem;
-  height: 3rem;
+  width: 18rem;
+  height: 3.2rem;
+  border-radius: 2rem;
+  border: 1px solid black;
   font-size: 1.2rem;
+  cursor: pointer;
 `;
 
 export const Reset = styled.button`
-  margin-top: 3rem;
-  width: 10rem;
-  height: 3rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
+  width: 12rem;
+  height: 3.2rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  cursor: pointer;
 `;
 
 // Footer
 
 export const FooterBox = styled.div`
   margin-top: 3rem;
-  border: 1px solid black;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  border-top: 1px solid black;
+  // background-color: red;
+  // position: fixed;
+  // bottom: 0;
+  // width: 100%;
 `;
 
 export const FooterText = styled.p`
   text-align: center;
+  font-size: 0.9rem;
 `;
 
 // Settings
@@ -194,4 +211,5 @@ export const SaveButton = styled.button`
   margin: auto;
   background-color: transparent;
   border: 1px solid black;
+  cursor: pointer;
 `;

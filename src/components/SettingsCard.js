@@ -22,6 +22,7 @@ import {
   JcBottom,
   JokeWords,
   JokeSetupDelivery,
+  JokeFullOneLine,
 } from "../Styles";
 import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
@@ -223,7 +224,11 @@ function SettingsCard() {
                     <JokeText>{jokeDelivery}</JokeText>
                   </JokeSetupDelivery>
                 )}
-                {fullJk && <JokeText>{fullJoke}</JokeText>}
+                {fullJk && (
+                  <JokeFullOneLine>
+                    <JokeText>{fullJoke}</JokeText>
+                  </JokeFullOneLine>
+                )}
               </JokeWords>
               <JokeIcon>
                 <FiTwitter />

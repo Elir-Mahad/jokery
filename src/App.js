@@ -10,7 +10,7 @@ function App() {
     <WholeApp>
       <Header />
       <SettingsCard />
-      {/* <Footer /> */}
+      <Footer />
     </WholeApp>
   );
 }
