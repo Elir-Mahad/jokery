@@ -124,7 +124,7 @@ function SettingsCard() {
               </OneSet>
               <OneSet>
                 <OsName>Single</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToOnePartJk} type="checkbox" />
               </OneSet>
             </SetOptions>
           </SetBox>
