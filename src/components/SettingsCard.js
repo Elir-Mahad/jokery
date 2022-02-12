@@ -134,7 +134,7 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsName>Any</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsName>Programming</OsName>
