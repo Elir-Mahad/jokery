@@ -106,6 +106,10 @@ function SettingsCard() {
     setRating("");
   };
 
+  const changeToCensored = () => {
+    setRating("nsfw,religious,political,racist,sexist,explicit");
+  };
+
   return (
     <div>
       {settingContainer && (
