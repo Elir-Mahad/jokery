@@ -48,6 +48,23 @@ function SettingsCard() {
 
   //
 
+  const [punchDelJk, setPunchDelJk] = useState(false);
+  const [fullJk, setFullJk] = useState(false);
+
+  const showPunchDelJk = () => {
+    changeToTwoPartJk();
+    setPunchDelJk(true);
+    setFullJk(false);
+  };
+
+  const showFullJk = () => {
+    changeToOnePartJk();
+    setPunchDelJk(false);
+    setFullJk(true);
+  };
+
+  //
+
   const getJoke = () => {
     Axios.get(
       `https://v2.jokeapi.dev/joke/${jokeCat}?blacklistFlags=${rating}&type=${jokeType}`
@@ -125,11 +142,11 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsName>Two part</OsName>
-                <OsInput onClick={changeToTwoPartJk} type="checkbox" />
+                <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsName>Single</OsName>
-                <OsInput onClick={changeToOnePartJk} type="checkbox" />
+                <OsInput onClick={showFullJk} type="checkbox" />
               </OneSet>
             </SetOptions>
           </SetBox>
@@ -200,11 +217,13 @@ function SettingsCard() {
             <JcHead></JcHead>
             <JokeNicons>
               <JokeWords>
-                <JokeSetupDelivery>
-                  <JokeText>{jokeSetup}</JokeText>
-                  <JokeText>{jokeDelivery}</JokeText>
-                </JokeSetupDelivery>
-                <JokeText>{fullJoke}</JokeText>
+                {punchDelJk && (
+                  <JokeSetupDelivery>
+                    <JokeText>{jokeSetup}</JokeText>
+                    <JokeText>{jokeDelivery}</JokeText>
+                  </JokeSetupDelivery>
+                )}
+                {fullJk && <JokeText>{fullJoke}</JokeText>}
               </JokeWords>
               <JokeIcon>
                 <FiTwitter />

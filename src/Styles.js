@@ -74,7 +74,7 @@ export const JokeText = styled.p`
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
-  // border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 1rem;
 `;
 
