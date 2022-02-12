@@ -82,6 +82,10 @@ function SettingsCard() {
     setJokeCat("dark");
   };
 
+  const changeToPun = () => {
+    setJokeCat("pun");
+  };
+
   return (
     <div>
       {settingContainer && (
