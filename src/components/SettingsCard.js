@@ -24,6 +24,11 @@ function SettingsCard() {
   const [settingContainer, setSettingContainer] = useState(true);
   const [jokeContainer, setJokeContainer] = useState(false);
   //
+  const hideSet = () => {
+    setSettingContainer(false);
+    setJokeContainer(true);
+  };
+
   return (
     <div>
       {settingContainer && (
