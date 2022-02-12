@@ -143,7 +143,7 @@ function SettingsCard() {
             </JokeIcon>
           </JokeNicons>
           <ShowJoke onClick={getJoke}>Show joke</ShowJoke>
-          <Reset>Reset</Reset>
+          <Reset onClick={showSet}>Reset</Reset>
         </JokecardBox>
       )}
     </div>
