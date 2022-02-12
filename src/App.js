@@ -1,18 +1,15 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./components/Landing";
-import Settings from "./components/Settings";
+import Header from "./components/Header";
+import SettingsCard from "./components/SettingsCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      </Router>
+      <Header />
+      <SettingsCard />
+      <Footer />
     </div>
   );
 }
