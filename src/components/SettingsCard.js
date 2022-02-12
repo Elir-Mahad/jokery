@@ -192,8 +192,7 @@ function SettingsCard() {
       {jokeContainer && (
         <JokecardBox>
           <JokeNicons>
-            <JokeText>why do python programmers wear glasses?</JokeText>
-            <JokeText>Because they can't C.</JokeText>
+            <JokeText>{jokeSetup}</JokeText>
             <JokeIcon>
               <FiTwitter />
             </JokeIcon>
