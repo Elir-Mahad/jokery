@@ -21,11 +21,12 @@ import { FiTwitter } from "react-icons/fi";
 
 function SettingsCard() {
   //
-  const [settingcontainer, setSettingContainer] = useState(true);
+  const [settingContainer, setSettingContainer] = useState(true);
+  const [jokeContainer, setJokeContainer] = useState(false);
   //
   return (
     <div>
-      {settingcontainer && (
+      {settingContainer && (
         <SettingsPage>
           <SettingsPageHeading>Settings</SettingsPageHeading>
           <SetBox>
