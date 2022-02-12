@@ -61,6 +61,13 @@ export const ShowJoke = styled.button`
   font-size: 1.2rem;
 `;
 
+export const Reset = styled.button`
+  margin-top: 3rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+`;
+
 // Footer
 
 export const FooterBox = styled.div`

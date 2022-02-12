@@ -16,6 +16,7 @@ import {
   JokeNicons,
   JokeText,
   ShowJoke,
+  Reset,
 } from "../Styles";
 import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
@@ -142,6 +143,7 @@ function SettingsCard() {
             </JokeIcon>
           </JokeNicons>
           <ShowJoke>Show joke</ShowJoke>
+          <Reset>Reset</Reset>
         </JokecardBox>
       )}
     </div>
