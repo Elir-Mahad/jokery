@@ -158,7 +158,7 @@ function SettingsCard() {
               </OneSet>
               <OneSet>
                 <OsName>Christmas</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToChristmas} type="checkbox" />
               </OneSet>
             </SetOptions>
             <SetOptions>
