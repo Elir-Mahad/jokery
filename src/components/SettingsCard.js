@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SettingsPage,
   SetBox,
@@ -20,6 +20,9 @@ import {
 import { FiTwitter } from "react-icons/fi";
 
 function SettingsCard() {
+  //
+  const [settingcontainer, setSettingContainer] = useState(true);
+  //
   return (
     <div>
       <SettingsPage>
