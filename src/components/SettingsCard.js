@@ -29,6 +29,11 @@ function SettingsCard() {
     setJokeContainer(true);
   };
 
+  const showSet = () => {
+    setSettingContainer(true);
+    setJokeContainer(false);
+  };
+
   return (
     <div>
       {settingContainer && (
