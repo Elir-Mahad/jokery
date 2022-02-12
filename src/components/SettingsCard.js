@@ -98,6 +98,10 @@ function SettingsCard() {
     setJokeCat("any");
   };
 
+  // manage ratings
+
+  const [rating, setRating] = useState("");
+
   return (
     <div>
       {settingContainer && (
