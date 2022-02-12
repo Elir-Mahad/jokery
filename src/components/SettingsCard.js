@@ -178,7 +178,7 @@ function SettingsCard() {
               </OneSet>
               <OneSet>
                 <OsName>R-rated</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToVulgar} type="checkbox" />
               </OneSet>
             </SetOptions>
           </SetBox>
