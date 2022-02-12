@@ -34,6 +34,11 @@ function SettingsCard() {
     setJokeContainer(false);
   };
 
+  //
+  const [jokeSetup, setJokeSetup] = useState("");
+  const [jokeDelivery, setJokeDelivery] = useState("");
+  const [fullJoke, setFullJoke] = useState("");
+
   return (
     <div>
       {settingContainer && (
