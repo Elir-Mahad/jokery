@@ -174,7 +174,7 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsName>General</OsName>
-                <OsInput type="checkbox" value="" id="" name="" />
+                <OsInput onClick={changeToCensored} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsName>R-rated</OsName>
