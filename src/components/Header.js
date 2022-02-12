@@ -5,7 +5,7 @@ import {
   Logo,
   SettingsIcon,
   Heading,
-} from "../../Styles";
+} from "../Styles";
 import logoimage from "../../assets/logo.png";
 import { AiOutlineSetting } from "react-icons/ai";
 import { Link } from "react-router-dom";
