@@ -142,7 +142,7 @@ function SettingsCard() {
               <FiTwitter />
             </JokeIcon>
           </JokeNicons>
-          <ShowJoke>Show joke</ShowJoke>
+          <ShowJoke onClick={getJoke}>Show joke</ShowJoke>
           <Reset>Reset</Reset>
         </JokecardBox>
       )}
