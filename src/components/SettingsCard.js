@@ -86,6 +86,10 @@ function SettingsCard() {
     setJokeCat("pun");
   };
 
+  const changeToSpooky = () => {
+    setJokeCat("spooky");
+  };
+
   return (
     <div>
       {settingContainer && (
