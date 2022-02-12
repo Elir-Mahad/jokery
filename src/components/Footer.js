@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterBox, FooterText } from "../../Styles";
+import { FooterBox, FooterText } from "../Styles";
 
 function Footer() {
   return (

@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import SettingsCard from "./components/SettingsCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>joke</h1>
+      <Header />
+      <SettingsCard />
+      <Footer />
     </div>
   );
 }
