@@ -103,16 +103,18 @@ function SettingsCard() {
         </SettingsPage>
       )}
       {/*  */}
-      <JokecardBox>
-        <JokeNicons>
-          <JokeText>why do python programmers wear glasses?</JokeText>
-          <JokeText>Because they can't C.</JokeText>
-          <JokeIcon>
-            <FiTwitter />
-          </JokeIcon>
-        </JokeNicons>
-        <ShowJoke>Show joke</ShowJoke>
-      </JokecardBox>
+      {jokeContainer && (
+        <JokecardBox>
+          <JokeNicons>
+            <JokeText>why do python programmers wear glasses?</JokeText>
+            <JokeText>Because they can't C.</JokeText>
+            <JokeIcon>
+              <FiTwitter />
+            </JokeIcon>
+          </JokeNicons>
+          <ShowJoke>Show joke</ShowJoke>
+        </JokecardBox>
+      )}
     </div>
   );
 }
