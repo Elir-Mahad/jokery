@@ -71,31 +71,31 @@ function SettingsCard() {
   const [jokeCat, setJokeCat] = useState("any");
 
   const changeToProgramming = () => {
-    setJokeCat("programming");
+    setJokeCat("Programming");
   };
 
-  const changeToMisc = () => {
-    setJokeCat("misc");
+  const changeToMiscellaneous = () => {
+    setJokeCat("Miscellaneous");
   };
 
   const changeToDark = () => {
-    setJokeCat("dark");
+    setJokeCat("Dark");
   };
 
   const changeToPun = () => {
-    setJokeCat("pun");
+    setJokeCat("Pun");
   };
 
   const changeToSpooky = () => {
-    setJokeCat("spooky");
+    setJokeCat("Spooky");
   };
 
   const changeToChristmas = () => {
-    setJokeCat("christmas");
+    setJokeCat("Christmas");
   };
 
   const changeToAny = () => {
-    setJokeCat("any");
+    setJokeCat("Any");
   };
 
   // manage ratings
@@ -164,7 +164,7 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsName>Miscellaneous</OsName>
-                <OsInput onClick={changeToMisc} type="checkbox" />
+                <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
             </SetOptions>
           </SetBox>
