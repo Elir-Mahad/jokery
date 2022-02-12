@@ -192,7 +192,10 @@ function SettingsCard() {
       {jokeContainer && (
         <JokecardBox>
           <JokeNicons>
-            <JokeText>{jokeSetup}</JokeText>
+            <div>
+              <JokeText>{jokeSetup}</JokeText>
+              <JokeText>{jokeDelivery}</JokeText>
+            </div>
             <JokeIcon>
               <FiTwitter />
             </JokeIcon>
