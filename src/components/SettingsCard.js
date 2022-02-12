@@ -102,6 +102,10 @@ function SettingsCard() {
 
   const [rating, setRating] = useState("");
 
+  const changeToVulgar = () => {
+    setRating("");
+  };
+
   return (
     <div>
       {settingContainer && (
