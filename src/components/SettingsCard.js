@@ -94,6 +94,10 @@ function SettingsCard() {
     setJokeCat("christmas");
   };
 
+  const changeToAny = () => {
+    setJokeCat("any");
+  };
+
   return (
     <div>
       {settingContainer && (
