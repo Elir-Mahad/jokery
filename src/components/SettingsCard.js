@@ -58,6 +58,10 @@ function SettingsCard() {
 
   const [jokeType, setJokeType] = useState("single");
 
+  const changeToTwoPartJk = () => {
+    setJokeType("twopart");
+  };
+
   return (
     <div>
       {settingContainer && (
