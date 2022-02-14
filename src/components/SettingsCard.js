@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SettingsPage,
   SetBox,
@@ -28,43 +28,48 @@ import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
 
 function SettingsCard() {
-  //
-  const [settingContainer, setSettingContainer] = useState(true);
-  const [jokeContainer, setJokeContainer] = useState(false);
-  //
+  // -------- PAGE SET UP
+
+  //! Create constant to store the joke card and the settings
+
+  const [settingContainer, setSettingContainer] = useState(false);
+  // The settings container is set to false
+
+  const [jokeContainer, setJokeContainer] = useState(true);
+  // The joke card container is set to true.
+
+  //! Create the ability to switch between the joke card and the settings
+
   const hideSet = () => {
+    // When this function gets triggered
     setSettingContainer(false);
+    // hide the settings
     setJokeContainer(true);
+    // show the joke card
   };
 
   const showSet = () => {
-    setSettingContainer(true);
+    // When theis function gets triggered
     setJokeContainer(false);
+    // hide the joke card
+    setSettingContainer(true);
+    // show the settings
   };
 
-  //
+  // ------------- FETCH DATA AND ALTER API URL BASED ON USER SELECTION
+
+  //! Create constants to store the api data end points
+
   const [jokeSetup, setJokeSetup] = useState("");
+  // This will store the joke set up for two part jokes
+
   const [jokeDelivery, setJokeDelivery] = useState("");
+  // This will store the joke delivery for two part jokes
+
   const [fullJoke, setFullJoke] = useState("");
+  // This will store the full joke for single jokes
 
-  //
-
-  const [punchDelJk, setPunchDelJk] = useState(false);
-  const [fullJk, setFullJk] = useState(false);
-
-  const showPunchDelJk = () => {
-    changeToTwoPartJk();
-    setPunchDelJk(true);
-    setFullJk(false);
-  };
-
-  const showFullJk = () => {
-    changeToOnePartJk();
-    setPunchDelJk(false);
-    setFullJk(true);
-  };
-
-  //
+  //! Fetch api data and store end points in the correct constants
 
   const getJoke = () => {
     Axios.get(
@@ -77,60 +82,119 @@ function SettingsCard() {
     });
   };
 
-  // manage joke types
+  //! Change between different joke types
 
   const [jokeType, setJokeType] = useState("single");
+  // This will store the joketype parameter for the api url
 
   const changeToTwoPartJk = () => {
+    // When this function is triggered
     setJokeType("twopart");
+    // change the joke type to two parts
   };
 
   const changeToOnePartJk = () => {
+    // When this function is triggered
     setJokeType("single");
+    // change the joke type to single
   };
 
-  // manage categries
+  //! Change between different joke categories
 
   const [jokeCat, setJokeCat] = useState("any");
+  // This will store the joke category parameter for the api url
 
   const changeToProgramming = () => {
+    // When this function is triggered
     setJokeCat("Programming");
+    // change the category to programming
   };
 
   const changeToMiscellaneous = () => {
+    // When this function is triggered
     setJokeCat("Miscellaneous");
+    // change the category to miscellaneous
   };
 
   const changeToDark = () => {
+    // When this function is triggered
     setJokeCat("Dark");
+    // change the category to dark
   };
 
   const changeToPun = () => {
+    // When this function is triggered
     setJokeCat("Pun");
+    // change the category to pun
   };
 
   const changeToSpooky = () => {
+    // When this function is triggered
     setJokeCat("Spooky");
+    // change the category to spooky
   };
 
   const changeToChristmas = () => {
+    // When this function is triggered
     setJokeCat("Christmas");
+    // change the category to christmas
   };
 
   const changeToAny = () => {
+    // When this function is triggered
     setJokeCat("Any");
+    // change the category to any
   };
 
-  // manage ratings
+  //! Change between different joke ratings
 
   const [rating, setRating] = useState("");
+  // This will store the flag blacklistFlags parameter for the api url
 
   const changeToVulgar = () => {
+    // When this function is triggered
     setRating("");
+    // remove all censors
   };
 
   const changeToCensored = () => {
+    // When this function is triggered
     setRating("nsfw,religious,political,racist,sexist,explicit");
+    // censore all inappropriate jokes
+  };
+
+  // ------------- AFTER THE DATA GETS FETCHED
+
+  //! Store single jokes  two part jokes in different divs
+
+  const [oneLineJk, setOneLineJk] = useState(false);
+  // This will store the div which contains the single line joke
+
+  const [twoLineJk, setTwoLineJk] = useState(true);
+  // This will store the div which contains the two line joke
+
+  //! Show two part joke div
+  //! or single part joke div
+  //! based on user selections
+
+  const showPunchDelJk = () => {
+    // When this function gets triggered
+    changeToTwoPartJk();
+    // change the joke type to two part
+    setOneLineJk(false);
+    // hide the single line jk div
+    setTwoLineJk(true);
+    // show the two line jk div
+  };
+
+  const showFullJk = () => {
+    // When this function gets triggered
+    changeToOnePartJk();
+    // change the joke type to single
+    setTwoLineJk(false);
+    // hide the two line jk div
+    setOneLineJk(true);
+    // show the single line jk div
   };
 
   return (
@@ -218,13 +282,13 @@ function SettingsCard() {
             <JcHead></JcHead>
             <JokeNicons>
               <JokeWords>
-                {punchDelJk && (
+                {twoLineJk && (
                   <JokeSetupDelivery>
                     <JokeText>{jokeSetup}</JokeText>
                     <JokeText>{jokeDelivery}</JokeText>
                   </JokeSetupDelivery>
                 )}
-                {fullJk && (
+                {oneLineJk && (
                   <JokeFullOneLine>
                     <JokeText>{fullJoke}</JokeText>
                   </JokeFullOneLine>
