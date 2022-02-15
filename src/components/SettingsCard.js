@@ -9,7 +9,6 @@ import {
   OsName,
   SaveButton,
   SaveButtonBox,
-  SettingsPageHeading,
   //
   JokecardBox,
   JokeIcon,
@@ -115,18 +114,6 @@ function SettingsCard() {
     setJokeCat("Pun");
     // change the category to pun
     setEditedCategoryName(punyy);
-  };
-
-  const changeToSpooky = () => {
-    // When this function is triggered
-    setJokeCat("Spooky");
-    // change the category to spooky
-  };
-
-  const changeToChristmas = () => {
-    // When this function is triggered
-    setJokeCat("Christmas");
-    // change the category to christmas
   };
 
   const changeToAny = () => {
@@ -240,7 +227,6 @@ function SettingsCard() {
     <div>
       {settingContainer && (
         <SettingsPage>
-          {/* <SettingsPageHeading>Settings</SettingsPageHeading> */}
           <SetBox>
             <SetHeading> Choose a joke type</SetHeading>
             <SetOptions>
@@ -277,16 +263,6 @@ function SettingsCard() {
                 <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
             </SetOptions>
-            {/* <SetOptions>
-              <OneSet>
-                <OsName>Spooky</OsName>
-                <OsInput onClick={changeToSpooky} type="checkbox" />
-              </OneSet>
-              <OneSet>
-                <OsName>Christmas</OsName>
-                <OsInput onClick={changeToChristmas} type="checkbox" />
-              </OneSet>
-            </SetOptions> */}
             <SetOptions>
               <OneSet>
                 <OsName>Miscellaneous</OsName>
