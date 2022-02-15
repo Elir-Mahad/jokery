@@ -6,7 +6,7 @@ function Loading() {
     <LoadBox>
       <img
         src="https://media.giphy.com/media/hxEXXoJMBZ0OnixlKk/giphy.gif"
-        alt="Loading from giphy "
+        alt="Loading from giphy. Guy pointing down. "
         width="100%"
       />
     </LoadBox>
