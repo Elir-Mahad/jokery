@@ -26,6 +26,7 @@ import {
 } from "../Styles";
 // import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
+import Loading from "./Loading";
 
 function SettingsCard() {
   // -------- PAGE SET UP
@@ -217,7 +218,7 @@ function SettingsCard() {
     // hide the two line jk div
     setOneLineJk(true);
     // show the single line jk div
-    setFullJoke("no joke here yet");
+    setFullJoke(<Loading />);
     // show the placeholder text
   };
 
