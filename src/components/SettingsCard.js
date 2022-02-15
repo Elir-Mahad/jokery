@@ -245,11 +245,11 @@ function SettingsCard() {
             <SetHeading> Choose a joke category</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>Random jokes</OsName>
+                <OsName>Random</OsName>
                 <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>Programming jokes</OsName>
+                <OsName>Programming</OsName>
                 <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
             </SetOptions>
