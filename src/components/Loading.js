@@ -5,9 +5,9 @@ function Loading() {
   return (
     <LoadBox>
       <img
-        src="https://i.giphy.com/media/ZO9b1ntYVJmjZlsWlm/giphy.webp"
+        src="https://media.giphy.com/media/hxEXXoJMBZ0OnixlKk/giphy.gif"
         alt="Loading from giphy "
-        width="50%"
+        width="100%"
       />
     </LoadBox>
   );
