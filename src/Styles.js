@@ -86,12 +86,10 @@ export const JwCat = styled.p`
   text-align: center;
   padding: 0.5rem;
   color: darkblue;
-  position: fixed;
-  margin-top: -0.3rem;
-  margin-left: 0.5rem;
   border: 1px solid black;
   border-radius: 1rem;
-  background-color: lightgrey;
+  color: darkblue;
+  width: 9rem;
 `;
 
 export const JokeSetupDelivery = styled.div`

@@ -42,7 +42,7 @@ function SettingsCard() {
   //! When user clicks reset button, show the settings
 
   const showSet = () => {
-    // When theis function gets triggered
+    // When this function gets triggered
     setJokeContainer(false);
     // hide the joke card
     setSettingContainer(true);
@@ -70,7 +70,7 @@ function SettingsCard() {
 
   //! Let user Select joke category
 
-  const [jokeCat, setJokeCat] = useState("any");
+  const [jokeCat, setJokeCat] = useState("Programming");
   // This will store the joke category parameter for the api url
 
   const changeToProgramming = () => {
@@ -113,6 +113,7 @@ function SettingsCard() {
     // When this function is triggered
     setJokeCat("Any");
     // change the category to any
+    setHiddenLetter(false);
   };
 
   //! Let user select joke rating
@@ -155,7 +156,8 @@ function SettingsCard() {
   // This will store the joke delivery for two part jokes
 
   const [fullJoke, setFullJoke] = useState(
-    "Have a great weekend! I hope your code behaves the same on Monday as it did on Friday."
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    // "Have a great weekend! I hope your code behaves the same on Monday as it did on Friday."
   );
   // This will store the full joke for single jokes
 
@@ -194,8 +196,9 @@ function SettingsCard() {
     // hide the single line jk div
     setTwoLineJk(true);
     // show the two line jk div
-    setJokeSetup("no joke here yet");
+    setJokeSetup("no joke here yet 1");
     // show the placeholder text
+    setJokeDelivery("no joke here yet 2");
   };
 
   //! If user selected the single joke, then show the onelinkjkdiv
@@ -211,6 +214,8 @@ function SettingsCard() {
     setFullJoke("no joke here yet");
     // show the placeholder text
   };
+
+  const [hiddenLetter, setHiddenLetter] = useState(true);
 
   return (
     <div>
@@ -297,7 +302,6 @@ function SettingsCard() {
             <JcHead></JcHead>
             <JokeNicons>
               <JokeWords>
-                {/* <JwCat>{jokeCat} jokes</JwCat> */}
                 {twoLineJk && (
                   <JokeSetupDelivery>
                     <JokeText>{jokeSetup}</JokeText>
@@ -316,7 +320,14 @@ function SettingsCard() {
             </JokeNicons>
             <JcBottom></JcBottom>
           </JcWrapper>
-          <ShowJoke onClick={getJoke}>Show joke</ShowJoke>
+          <ShowJoke onClick={getJoke}>
+            show me {/*  */}
+            {hiddenLetter && (
+              //
+              <span> a </span>
+            )}
+            {jokeCat} joke
+          </ShowJoke>
           <Reset onClick={showSet}>Reset</Reset>
         </JokecardBox>
       )}
