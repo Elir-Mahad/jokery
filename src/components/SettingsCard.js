@@ -67,21 +67,13 @@ function SettingsCard() {
     // change the joke type to single
   };
 
-  //! Manage joke cateogory settings names
+  //! Let 'show joke' button's text change, based on the user's joke category selection
 
-  const [editedCategoryName, setEditedCategoryName] = useState();
+  const [jcButtonText, setJcButtonText] = useState();
+  // This will store the joke card's 'show joke' button text
 
   const [tempText, setTempText] = useState(true);
-
-  const anyy = "Show me a random joke";
-
-  const programmyy = "Show me a programming joke";
-
-  const darkyy = "Show me a dark joke";
-
-  const punyy = "Show me a pun joke";
-
-  const miscyy = "Show me a weird joke";
+  // This will store the placeholder text for the joke card's 'show joke' button
 
   //! Let user Select joke category
 
@@ -92,35 +84,40 @@ function SettingsCard() {
     // When this function is triggered
     setJokeCat("Programming");
     // change the category to programming
-    setEditedCategoryName(programmyy);
+    setJcButtonText("Show me a programming joke");
+    // set the value of the joke card button text to this string
   };
 
   const changeToMiscellaneous = () => {
     // When this function is triggered
     setJokeCat("Miscellaneous");
     // change the category to miscellaneous
-    setEditedCategoryName(miscyy);
+    setJcButtonText("Show me a weird joke");
+    // set the value of the joke card button text to this string
   };
 
   const changeToDark = () => {
     // When this function is triggered
     setJokeCat("Dark");
     // change the category to dark
-    setEditedCategoryName(darkyy);
+    setJcButtonText("Show me a dark joke");
+    // set the value of the joke card button text to this string
   };
 
   const changeToPun = () => {
     // When this function is triggered
     setJokeCat("Pun");
     // change the category to pun
-    setEditedCategoryName(punyy);
+    setJcButtonText("Show me a pun joke");
+    // set the value of the joke card button text to this string
   };
 
   const changeToAny = () => {
     // When this function is triggered
     setJokeCat("Any");
     // change the category to any
-    setEditedCategoryName(anyy);
+    setJcButtonText("Show me a random joke");
+    // set the value of the joke card button text to this string
   };
 
   //! Let user select joke rating
@@ -149,6 +146,7 @@ function SettingsCard() {
     setJokeContainer(true);
     // show the joke card
     setTempText(false);
+    // hide the joke cards button placeholder text
   };
 
   //! Create constants to store the api data end points
@@ -316,8 +314,13 @@ function SettingsCard() {
             <JcBottom></JcBottom>
           </JcWrapper>
           <ShowJoke onClick={getJoke}>
+            {/*  */}
             {tempText && <span>Show me a programming joke</span>}
-            {editedCategoryName}
+            {/* this span is shown before the user modifies setting */}
+            {jcButtonText}
+            {/* after the user modifies setting, 
+            tempText is hidden and jsButtonText will display strings 
+            based on the user category selection */}
           </ShowJoke>
           <Reset onClick={showSet}>Reset</Reset>
         </JokecardBox>
