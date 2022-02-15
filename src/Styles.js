@@ -271,3 +271,11 @@ export const SaveButton = styled.button`
     height: 3rem;
   }
 `;
+
+// Giphy
+
+export const LoadBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
