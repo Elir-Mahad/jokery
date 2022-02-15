@@ -35,8 +35,6 @@ export const JokecardBox = styled.div`
 `;
 
 export const JcWrapper = styled.div`
-  // background-color: red;
-  // padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,10 +62,16 @@ export const JokeNicons = styled.div`
   border: 1px solid black;
   border-radius: 1.5rem;
   width: 20rem;
-  height: 25rem;
+  min-height: 25rem;
   background-color: white;
+  //
   position: relative;
   z-index: 3;
+  //
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //
   @media (max-width: 500px) {
     width: 95%;
   }
@@ -75,8 +79,19 @@ export const JokeNicons = styled.div`
 `;
 
 export const JokeWords = styled.div`
-  // background-color: red;
-  height: 20rem;
+  height: 100%;
+`;
+
+export const JwCat = styled.p`
+  text-align: center;
+  padding: 0.5rem;
+  color: darkblue;
+  position: fixed;
+  margin-top: -0.3rem;
+  margin-left: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: lightgrey;
 `;
 
 export const JokeSetupDelivery = styled.div`

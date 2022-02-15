@@ -23,14 +23,15 @@ import {
   JokeWords,
   JokeSetupDelivery,
   JokeFullOneLine,
+  JwCat,
 } from "../Styles";
-import { FiTwitter } from "react-icons/fi";
+// import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
 
 function SettingsCard() {
   // -------- PAGE SET UP
 
-  //! Create constant to store the joke card and the settings
+  //! In the beginning, hide the settings, show the joke card
 
   const [settingContainer, setSettingContainer] = useState(false);
   // The settings container is set to false
@@ -38,15 +39,7 @@ function SettingsCard() {
   const [jokeContainer, setJokeContainer] = useState(true);
   // The joke card container is set to true.
 
-  //! Create the ability to switch between the joke card and the settings
-
-  const hideSet = () => {
-    // When this function gets triggered
-    setSettingContainer(false);
-    // hide the settings
-    setJokeContainer(true);
-    // show the joke card
-  };
+  //! When user clicks reset button, show the settings
 
   const showSet = () => {
     // When theis function gets triggered
@@ -56,33 +49,9 @@ function SettingsCard() {
     // show the settings
   };
 
-  // ------------- FETCH DATA AND ALTER API URL BASED ON USER SELECTION
+  // ------------- DEFINE API URL BASED ON USER SELECTION AND THEN FETCH DATA
 
-  //! Create constants to store the api data end points
-
-  const [jokeSetup, setJokeSetup] = useState("");
-  // This will store the joke set up for two part jokes
-
-  const [jokeDelivery, setJokeDelivery] = useState("");
-  // This will store the joke delivery for two part jokes
-
-  const [fullJoke, setFullJoke] = useState("");
-  // This will store the full joke for single jokes
-
-  //! Fetch api data and store end points in the correct constants
-
-  const getJoke = () => {
-    Axios.get(
-      `https://v2.jokeapi.dev/joke/${jokeCat}?blacklistFlags=${rating}&type=${jokeType}`
-    ).then((response) => {
-      console.log(response);
-      setJokeSetup(response.data.setup);
-      setJokeDelivery(response.data.delivery);
-      setFullJoke(response.data.joke);
-    });
-  };
-
-  //! Change between different joke types
+  //! Let user select joke type
 
   const [jokeType, setJokeType] = useState("single");
   // This will store the joketype parameter for the api url
@@ -99,7 +68,7 @@ function SettingsCard() {
     // change the joke type to single
   };
 
-  //! Change between different joke categories
+  //! Let user Select joke category
 
   const [jokeCat, setJokeCat] = useState("any");
   // This will store the joke category parameter for the api url
@@ -146,7 +115,7 @@ function SettingsCard() {
     // change the category to any
   };
 
-  //! Change between different joke ratings
+  //! Let user select joke rating
 
   const [rating, setRating] = useState("");
   // This will store the flag blacklistFlags parameter for the api url
@@ -163,19 +132,59 @@ function SettingsCard() {
     // censore all inappropriate jokes
   };
 
+  //! Save the user selections and hide settings
+
+  const saveUrlHideSettings = () => {
+    // When this function gets triggered
+    setSettingContainer(false);
+    // hide the settings
+    setJokeContainer(true);
+    // show the joke card
+  };
+
+  //! Create constants to store the api data end points
+
+  const [jokeSetup, setJokeSetup] = useState(
+    "Why did the functional programmer get thrown out of school?"
+  );
+  // This will store the joke set up for two part jokes
+
+  const [jokeDelivery, setJokeDelivery] = useState(
+    "Because he refused to take classes."
+  );
+  // This will store the joke delivery for two part jokes
+
+  const [fullJoke, setFullJoke] = useState(
+    "Have a great weekend! I hope your code behaves the same on Monday as it did on Friday."
+  );
+  // This will store the full joke for single jokes
+
+  //! Fetch api data and store end points in the correct constants
+
+  const getJoke = () => {
+    Axios.get(
+      `https://v2.jokeapi.dev/joke/${jokeCat}?blacklistFlags=${rating}&type=${jokeType}`
+    ).then((response) => {
+      console.log(response.data);
+      setJokeSetup(response.data.setup);
+      setJokeDelivery(response.data.delivery);
+      setFullJoke(response.data.joke);
+      setJokeCat(response.data.category);
+    });
+  };
+  // console.log(jokeCat);
+
   // ------------- AFTER THE DATA GETS FETCHED
 
-  //! Store single jokes  two part jokes in different divs
+  //! Store single jokes and two part jokes in different divs
 
-  const [oneLineJk, setOneLineJk] = useState(false);
+  const [oneLineJk, setOneLineJk] = useState(true);
   // This will store the div which contains the single line joke
 
-  const [twoLineJk, setTwoLineJk] = useState(true);
+  const [twoLineJk, setTwoLineJk] = useState(false);
   // This will store the div which contains the two line joke
 
-  //! Show two part joke div
-  //! or single part joke div
-  //! based on user selections
+  //! If user selected two part joke, then show the twolinkjk div
 
   const showPunchDelJk = () => {
     // When this function gets triggered
@@ -185,7 +194,11 @@ function SettingsCard() {
     // hide the single line jk div
     setTwoLineJk(true);
     // show the two line jk div
+    setJokeSetup("no joke here yet");
+    // show the placeholder text
   };
+
+  //! If user selected the single joke, then show the onelinkjkdiv
 
   const showFullJk = () => {
     // When this function gets triggered
@@ -195,6 +208,8 @@ function SettingsCard() {
     // hide the two line jk div
     setOneLineJk(true);
     // show the single line jk div
+    setFullJoke("no joke here yet");
+    // show the placeholder text
   };
 
   return (
@@ -271,7 +286,7 @@ function SettingsCard() {
           </SetBox>
           {/*  */}
           <SaveButtonBox>
-            <SaveButton onClick={hideSet}>Save</SaveButton>
+            <SaveButton onClick={saveUrlHideSettings}>Save</SaveButton>
           </SaveButtonBox>
         </SettingsPage>
       )}
@@ -282,6 +297,7 @@ function SettingsCard() {
             <JcHead></JcHead>
             <JokeNicons>
               <JokeWords>
+                {/* <JwCat>{jokeCat} jokes</JwCat> */}
                 {twoLineJk && (
                   <JokeSetupDelivery>
                     <JokeText>{jokeSetup}</JokeText>
@@ -294,9 +310,9 @@ function SettingsCard() {
                   </JokeFullOneLine>
                 )}
               </JokeWords>
-              <JokeIcon>
+              {/* <JokeIcon>
                 <FiTwitter />
-              </JokeIcon>
+              </JokeIcon> */}
             </JokeNicons>
             <JcBottom></JcBottom>
           </JcWrapper>
