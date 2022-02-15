@@ -68,6 +68,22 @@ function SettingsCard() {
     // change the joke type to single
   };
 
+  //! Manage joke cateogory settings names
+
+  const [editedCategoryName, setEditedCategoryName] = useState();
+
+  const [tempText, setTempText] = useState(true);
+
+  const anyy = "Show me a random joke";
+
+  const programmyy = "Show me a programming joke";
+
+  const darkyy = "Show me a dark joke";
+
+  const punyy = "Show me a pun joke";
+
+  const miscyy = "Show me a weird joke";
+
   //! Let user Select joke category
 
   const [jokeCat, setJokeCat] = useState("Programming");
@@ -77,24 +93,28 @@ function SettingsCard() {
     // When this function is triggered
     setJokeCat("Programming");
     // change the category to programming
+    setEditedCategoryName(programmyy);
   };
 
   const changeToMiscellaneous = () => {
     // When this function is triggered
     setJokeCat("Miscellaneous");
     // change the category to miscellaneous
+    setEditedCategoryName(miscyy);
   };
 
   const changeToDark = () => {
     // When this function is triggered
     setJokeCat("Dark");
     // change the category to dark
+    setEditedCategoryName(darkyy);
   };
 
   const changeToPun = () => {
     // When this function is triggered
     setJokeCat("Pun");
     // change the category to pun
+    setEditedCategoryName(punyy);
   };
 
   const changeToSpooky = () => {
@@ -113,7 +133,7 @@ function SettingsCard() {
     // When this function is triggered
     setJokeCat("Any");
     // change the category to any
-    setHiddenLetter(false);
+    setEditedCategoryName(anyy);
   };
 
   //! Let user select joke rating
@@ -141,6 +161,7 @@ function SettingsCard() {
     // hide the settings
     setJokeContainer(true);
     // show the joke card
+    setTempText(false);
   };
 
   //! Create constants to store the api data end points
@@ -215,8 +236,6 @@ function SettingsCard() {
     // show the placeholder text
   };
 
-  const [hiddenLetter, setHiddenLetter] = useState(true);
-
   return (
     <div>
       {settingContainer && (
@@ -240,11 +259,11 @@ function SettingsCard() {
             <SetHeading> Choose a joke category</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>Any</OsName>
+                <OsName>Random jokes</OsName>
                 <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>Programming</OsName>
+                <OsName>Programming jokes</OsName>
                 <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
             </SetOptions>
@@ -321,12 +340,8 @@ function SettingsCard() {
             <JcBottom></JcBottom>
           </JcWrapper>
           <ShowJoke onClick={getJoke}>
-            show me {/*  */}
-            {hiddenLetter && (
-              //
-              <span> a </span>
-            )}
-            {jokeCat} joke
+            {tempText && <span>Show me a programming joke</span>}
+            {editedCategoryName}
           </ShowJoke>
           <Reset onClick={showSet}>Reset</Reset>
         </JokecardBox>
