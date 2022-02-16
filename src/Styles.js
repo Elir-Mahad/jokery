@@ -53,7 +53,7 @@ export const JcHead = styled.div`
   height: 4.4rem;
   border-radius: 2rem;
   margin-bottom: -3.6rem;
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     width: 100%;
   }
 `;
@@ -72,7 +72,7 @@ export const JokeNicons = styled.div`
   flex-direction: column;
   justify-content: center;
   //
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     width: 95%;
   }
   //
@@ -113,8 +113,11 @@ export const JokeText = styled.p`
   padding: 1rem;
   word-break: break-word;
   @media (max-width: 500px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
+  // @media (max-width: 400px) {
+  //   font-size: 1.1rem;
+  // }
 `;
 
 export const JcBottom = styled.div`
@@ -126,7 +129,7 @@ export const JcBottom = styled.div`
   border-radius: 2rem;
   margin-top: -3.6rem;
   z-index: 1;
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     width: 100%;
   }
 `;
