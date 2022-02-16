@@ -144,31 +144,35 @@ export const JokeIcon = styled.button`
 
 export const ShowJoke = styled.button`
   margin-top: 3rem;
-  width: 18rem;
+  width: 20rem;
   height: 3.2rem;
   border-radius: 2rem;
   border: 1px solid black;
   font-size: 1.2rem;
   cursor: pointer;
   @media (max-width: 500px) {
-    width: 12rem;
     font-size: 1rem;
     height: 3rem;
+  }
+  @media (max-width: 400px) {
+    width: 95%;
   }
 `;
 
 export const Reset = styled.button`
   margin-top: 1rem;
   font-size: 1.2rem;
-  width: 12rem;
+  width: 20rem;
   height: 3.2rem;
   border-radius: 2rem;
   border: 1px solid black;
   cursor: pointer;
   @media (max-width: 500px) {
-    width: 8rem;
     font-size: 1rem;
     height: 3rem;
+  }
+  @media (max-width: 400px) {
+    width: 95%;
   }
 `;
 

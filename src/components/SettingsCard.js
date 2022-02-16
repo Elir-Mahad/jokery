@@ -323,7 +323,7 @@ function SettingsCard() {
             tempText is hidden and jsButtonText will display strings 
             based on the user category selection */}
           </ShowJoke>
-          <Reset onClick={showSet}>Reset</Reset>
+          <Reset onClick={showSet}>Reset your settings</Reset>
         </JokecardBox>
       )}
     </div>
