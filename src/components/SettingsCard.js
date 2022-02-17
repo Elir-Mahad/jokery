@@ -27,6 +27,11 @@ import {
 // import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
 import Loading from "./Loading";
+import randomicon from "../assets/randomicon.png";
+import programmingicon from "../assets/programingicon.png";
+import darkicon from "../assets/darkicon.png";
+import punicon from "../assets/punicon.png";
+import miscicon from "../assets/miscicon.png";
 
 function SettingsCard() {
   // -------- PAGE SET UP
