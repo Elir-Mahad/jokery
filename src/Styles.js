@@ -286,7 +286,7 @@ export const SaveButton = styled.button`
   @media (max-width: 450px) {
     font-size: 1rem;
     height: 3rem;
-    width: 95%;
+    width: 100%;
   }
 `;
 
