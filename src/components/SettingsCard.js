@@ -42,6 +42,7 @@ import miscicon from "../assets/miscicon.png";
 import goodicon from "../assets/g-rated-icon.png";
 import badicon from "../assets/r-rated-icon.png";
 //
+import Bounce from "react-reveal/Bounce";
 
 function SettingsCard() {
   // -------- PAGE SET UP
@@ -247,8 +248,8 @@ function SettingsCard() {
       {settingContainer && (
         <SettingsPage>
           <SetBox>
-            <SetHeading> Choose a joke type</SetHeading>
-            <SetOptions>
+            <Bounce duration={3000} top cascade>
+              <SetHeading> Choose a joke type</SetHeading>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={singleicon} />
@@ -263,12 +264,12 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
-            </SetOptions>
+            </Bounce>
           </SetBox>
           {/*  */}
           <SetBox>
-            <SetHeading> Choose a joke category</SetHeading>
-            <SetOptions>
+            <Bounce duration={3000} top cascade>
+              <SetHeading> Choose a joke category</SetHeading>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={randomicon} />
@@ -283,8 +284,6 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
-            </SetOptions>
-            <SetOptions>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={darkicon} />
@@ -299,8 +298,6 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
-            </SetOptions>
-            <SetOptions>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={miscicon} />
@@ -308,12 +305,12 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
-            </SetOptions>
+            </Bounce>
           </SetBox>
           {/*  */}
           <SetBox>
-            <SetHeading> Choose a joke rating</SetHeading>
-            <SetOptions>
+            <Bounce duration={3000} top cascade>
+              <SetHeading> Choose a joke rating</SetHeading>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={goodicon} />
@@ -328,7 +325,7 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToVulgar} type="checkbox" />
               </OneSet>
-            </SetOptions>
+            </Bounce>
           </SetBox>
           {/*  */}
           {/* <SaveButtonBox> */}
