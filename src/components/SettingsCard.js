@@ -259,8 +259,8 @@ function SettingsCard() {
     <div>
       {settingContainer && (
         <SettingsPage>
-          <SetBox>
-            <Bounce duration={3000} top cascade>
+          <Bounce duration={2000} top>
+            <SetBox>
               <SetHeading> Choose a joke type</SetHeading>
               <OneSet>
                 <OsNameIcon>
@@ -276,11 +276,9 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
-            </Bounce>
-          </SetBox>
-          {/*  */}
-          <SetBox>
-            <Bounce duration={3000} top cascade>
+            </SetBox>
+            {/*  */}
+            <SetBox>
               <SetHeading> Choose a joke category</SetHeading>
               <OneSet>
                 <OsNameIcon>
@@ -317,11 +315,9 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
-            </Bounce>
-          </SetBox>
-          {/*  */}
-          <SetBox>
-            <Bounce duration={3000} top cascade>
+            </SetBox>
+            {/*  */}
+            <SetBox>
               <SetHeading> Choose a joke rating</SetHeading>
               <OneSet>
                 <OsNameIcon>
@@ -337,8 +333,8 @@ function SettingsCard() {
                 </OsNameIcon>
                 <OsInput onClick={changeToVulgar} type="checkbox" />
               </OneSet>
-            </Bounce>
-          </SetBox>
+            </SetBox>
+          </Bounce>
           {/*  */}
           {/* <SaveButtonBox> */}
           <SaveButton onClick={saveUrlHideSettings}>
