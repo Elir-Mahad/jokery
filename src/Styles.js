@@ -251,7 +251,7 @@ export const OsName = styled.p`
 
 export const OsIcon = styled.img`
   height: 2rem;
-  margin-left: 0.5em;
+  margin-right: 0.5em;
 `;
 
 export const OsInput = styled.input`

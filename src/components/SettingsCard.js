@@ -252,15 +252,15 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsNameIcon>
-                  <OsName>Random</OsName>
                   <OsIcon src={randomicon} />
+                  <OsName>Random</OsName>
                 </OsNameIcon>
                 <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
-                  <OsName>Programming</OsName>
                   <OsIcon src={programmingicon} />
+                  <OsName>Programming</OsName>
                 </OsNameIcon>
                 <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
@@ -268,15 +268,15 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsNameIcon>
-                  <OsName>Dark</OsName>
                   <OsIcon src={darkicon} />
+                  <OsName>Dark</OsName>
                 </OsNameIcon>
                 <OsInput onClick={changeToDark} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
-                  <OsName>Pun</OsName>
                   <OsIcon src={punicon} />
+                  <OsName>Pun</OsName>
                 </OsNameIcon>
                 <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
@@ -284,8 +284,8 @@ function SettingsCard() {
             <SetOptions>
               <OneSet>
                 <OsNameIcon>
-                  <OsName>Miscellaneous</OsName>
                   <OsIcon src={miscicon} />
+                  <OsName>Miscellaneous</OsName>
                 </OsNameIcon>
                 <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
