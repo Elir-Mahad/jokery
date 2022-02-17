@@ -226,7 +226,6 @@ export const SetHeading = styled.p`
   font-size: 1.5rem;
   @media (max-width: 450px) {
     font-size: 1.3rem;
-    padding-left: 1rem;
   }
 `;
 
