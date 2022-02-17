@@ -125,6 +125,11 @@ export const JokeText = styled.p`
   // }
 `;
 
+export const JtIcon = styled.img`
+  height: 1.5rem;
+  padding-right: 0.5rem;
+`;
+
 export const JcBottom = styled.div`
   //
   background-color: white;
