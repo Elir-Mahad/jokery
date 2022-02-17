@@ -246,14 +246,14 @@ function SettingsCard() {
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={singleicon} />
-                  <OsName>Single</OsName>
+                  <OsName>One liner</OsName>
                 </OsNameIcon>
                 <OsInput onClick={showFullJk} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={twoparticon} />
-                  <OsName>Two part</OsName>
+                  <OsName>Hook + punchline</OsName>
                 </OsNameIcon>
                 <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
