@@ -115,6 +115,7 @@ export const JokeText = styled.p`
   text-align: center;
   margin-bottom: 1rem;
   padding: 1rem;
+  line-height: 2rem;
   word-break: break-word;
   @media (max-width: 500px) {
     font-size: 1.2rem;
