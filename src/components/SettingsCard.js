@@ -156,6 +156,16 @@ function SettingsCard() {
 
   //! Save the user selections and hide settings
 
+  const checkUserCategorySelection = () => {
+    //
+    if (jcButtonText === undefined) {
+      // if the user didn't select any text,
+      // which means that jcButtonText will be underfined
+      setJcButtonText("Show me a programming joke");
+      // set the button text to this string
+    }
+  };
+
   const saveUrlHideSettings = () => {
     // When this function gets triggered
     setSettingContainer(false);
@@ -164,6 +174,8 @@ function SettingsCard() {
     // show the joke card
     setTempText(false);
     // hide the joke cards button placeholder text
+    checkUserCategorySelection();
+    // trigger this function
   };
 
   //! Create constants to store the api data end points
