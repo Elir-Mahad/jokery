@@ -255,7 +255,7 @@ export const OsIcon = styled.img`
 `;
 
 export const OsInput = styled.input`
-  // padding-right: 1rem;
+  padding-right: 1rem;
 `;
 
 export const SaveButtonBox = styled.div`

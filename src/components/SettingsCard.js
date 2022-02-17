@@ -269,22 +269,14 @@ function SettingsCard() {
                   <OsIcon src={singleicon} />
                   <OsName>One liner</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={showFullJk} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={showFullJk} type="checkbox" /> */}
+                <OsInput onClick={showFullJk} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={twoparticon} />
                   <OsName>Hook + punchline</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={showPunchDelJk} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={showPunchDelJk} type="checkbox" /> */}
+                <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
             </Bounce>
           </SetBox>
@@ -297,63 +289,35 @@ function SettingsCard() {
                   <OsIcon src={randomicon} />
                   <OsName>Random</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={changeToAny} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToAny} type="checkbox" /> */}
+                <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={programmingicon} />
                   <OsName>Programming</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input
-                    onClick={changeToProgramming}
-                    type="checkbox"
-                    id="switch"
-                  />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToProgramming} type="checkbox" /> */}
+                <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={darkicon} />
                   <OsName>Dark</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={changeToDark} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToDark} type="checkbox" /> */}
+                <OsInput onClick={changeToDark} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={punicon} />
                   <OsName>Pun</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={changeToPun} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToPun} type="checkbox" /> */}
+                <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={miscicon} />
                   <OsName>Miscellaneous</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input
-                    onClick={changeToMiscellaneous}
-                    type="checkbox"
-                    id="switch"
-                  />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToMiscellaneous} type="checkbox" /> */}
+                <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
             </Bounce>
           </SetBox>
@@ -366,26 +330,14 @@ function SettingsCard() {
                   <OsIcon src={goodicon} />
                   <OsName>General</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input
-                    onClick={changeToCensored}
-                    type="checkbox"
-                    id="switch"
-                  />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToCensored} type="checkbox" /> */}
+                <OsInput onClick={changeToCensored} type="checkbox" />
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={badicon} />
                   <OsName>R-rated</OsName>
                 </OsNameIcon>
-                <div className="toogle">
-                  <input onClick={changeToVulgar} type="checkbox" id="switch" />
-                  <label for="switch"></label>
-                </div>
-                {/* <OsInput onClick={changeToVulgar} type="checkbox" /> */}
+                <OsInput onClick={changeToVulgar} type="checkbox" />
               </OneSet>
             </Bounce>
           </SetBox>
