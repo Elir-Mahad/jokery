@@ -234,11 +234,12 @@ function SettingsCard() {
     // change the joke type to two part
     setOneLineJk(false);
     // hide the single line jk div
+    setJokeSetup(<Loading />);
+    // show the placeholder gif
+    setJokeDelivery("");
+    // set the joke delivery to empyt string
     setTwoLineJk(true);
     // show the two line jk div
-    setJokeSetup(<Loading />);
-    // show the placeholder text
-    setJokeDelivery("");
   };
 
   //! If user selected the single joke, then show the onelinkjkdiv
@@ -249,10 +250,10 @@ function SettingsCard() {
     // change the joke type to single
     setTwoLineJk(false);
     // hide the two line jk div
+    setFullJoke(<Loading />);
+    // show the placeholder gif
     setOneLineJk(true);
     // show the single line jk div
-    setFullJoke(<Loading />);
-    // show the placeholder text
   };
 
   return (

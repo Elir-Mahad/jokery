@@ -204,6 +204,7 @@ export const SettingsPage = styled.div`
   @media (max-width: 450px) {
     padding-left: 1rem;
     padding-right: 1rem;
+    align-items: unset;
   }
 `;
 
@@ -214,7 +215,7 @@ export const SettingsPageHeading = styled.h2`
 export const SetBox = styled.div`
   width: 25rem;
   @media (max-width: 450px) {
-    width: 95%;
+    width: 100%;
   }
 `;
 
