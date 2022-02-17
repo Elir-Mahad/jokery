@@ -183,22 +183,6 @@ export const Reset = styled.button`
   }
 `;
 
-// Footer
-
-export const FooterBox = styled.div`
-  margin-top: 3rem;
-  border-top: 1px solid black;
-  width: 100%;
-  // @media (max-width: 500px) {
-  //   font-size: 1.4rem;
-  // }
-`;
-
-export const FooterText = styled.p`
-  text-align: center;
-  font-size: 0.9rem;
-`;
-
 // Settings
 
 export const SettingsPage = styled.div`
@@ -211,6 +195,10 @@ export const SettingsPage = styled.div`
   z-index: 2;
   background-color: white;
   padding-top: 1rem;
+  @media (max-width: 500px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 export const SettingsPageHeading = styled.h2`
@@ -236,10 +224,7 @@ export const SetHeading = styled.p`
 `;
 
 export const SetOptions = styled.div`
-  @media (max-width: 500px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  //
 `;
 
 export const OneSet = styled.div`
@@ -265,25 +250,25 @@ export const OsInput = styled.input`
 `;
 
 export const SaveButtonBox = styled.div`
-  width: 25rem;
-  padding: 1rem;
-  padding-top: 2rem;
-  @media (max-width: 500px) {
-    width: 15rem;
-  }
+  //
 `;
 
 export const SaveButton = styled.button`
-  width: 100%;
-  height: 3.5rem;
-  font-size: 1.2rem;
+  // width: 100%;
   background-color: lightgrey;
   border: 1px solid black;
   border-radius: 1rem;
+  //
+  height: 3.2rem;
+  width: 25rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  //
   cursor: pointer;
   @media (max-width: 500px) {
     font-size: 1rem;
     height: 3rem;
+    width: 100%;
   }
 `;
 
@@ -293,4 +278,20 @@ export const LoadBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+// Footer
+
+export const FooterBox = styled.div`
+  margin-top: 3rem;
+  border-top: 1px solid black;
+  width: 100%;
+  // @media (max-width: 500px) {
+  //   font-size: 1.4rem;
+  // }
+`;
+
+export const FooterText = styled.p`
+  text-align: center;
+  font-size: 0.9rem;
 `;

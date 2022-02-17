@@ -284,9 +284,11 @@ function SettingsCard() {
             </SetOptions>
           </SetBox>
           {/*  */}
-          <SaveButtonBox>
-            <SaveButton onClick={saveUrlHideSettings}>Save</SaveButton>
-          </SaveButtonBox>
+          {/* <SaveButtonBox> */}
+          <SaveButton onClick={saveUrlHideSettings}>
+            Save your settings
+          </SaveButton>
+          {/* </SaveButtonBox> */}
         </SettingsPage>
       )}
       {/*  */}
