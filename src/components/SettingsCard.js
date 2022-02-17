@@ -23,6 +23,8 @@ import {
   JokeSetupDelivery,
   JokeFullOneLine,
   JwCat,
+  OsNameIcon,
+  OsIcon,
 } from "../Styles";
 // import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
@@ -249,27 +251,42 @@ function SettingsCard() {
             <SetHeading> Choose a joke category</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>Random</OsName>
+                <OsNameIcon>
+                  <OsName>Random</OsName>
+                  <OsIcon src={randomicon} />
+                </OsNameIcon>
                 <OsInput onClick={changeToAny} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>Programming</OsName>
+                <OsNameIcon>
+                  <OsName>Programming</OsName>
+                  <OsIcon src={programmingicon} />
+                </OsNameIcon>
                 <OsInput onClick={changeToProgramming} type="checkbox" />
               </OneSet>
             </SetOptions>
             <SetOptions>
               <OneSet>
-                <OsName>Dark</OsName>
+                <OsNameIcon>
+                  <OsName>Dark</OsName>
+                  <OsIcon src={darkicon} />
+                </OsNameIcon>
                 <OsInput onClick={changeToDark} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>Pun</OsName>
+                <OsNameIcon>
+                  <OsName>Pun</OsName>
+                  <OsIcon src={punicon} />
+                </OsNameIcon>
                 <OsInput onClick={changeToPun} type="checkbox" />
               </OneSet>
             </SetOptions>
             <SetOptions>
               <OneSet>
-                <OsName>Miscellaneous</OsName>
+                <OsNameIcon>
+                  <OsName>Miscellaneous</OsName>
+                  <OsIcon src={miscicon} />
+                </OsNameIcon>
                 <OsInput onClick={changeToMiscellaneous} type="checkbox" />
               </OneSet>
             </SetOptions>
