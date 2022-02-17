@@ -237,11 +237,21 @@ export const OneSet = styled.div`
   padding-right: 1rem;
 `;
 
+export const OsNameIcon = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 export const OsName = styled.p`
   font-size: 1.2rem;
   @media (max-width: 450px) {
     font-size: 1rem;
   }
+`;
+
+export const OsIcon = styled.img`
+  height: 2rem;
+  margin-left: 0.5em;
 `;
 
 export const OsInput = styled.input`
