@@ -236,10 +236,9 @@ function SettingsCard() {
     // hide the single line jk div
     setTwoLineJk(true);
     // show the two line jk div
-    setJokeSetup("no joke here yet 1");
+    setJokeSetup(<Loading />);
     // show the placeholder text
-    setJokeDelivery("no joke here yet 2");
-    console.log("i've been clicked punch");
+    setJokeDelivery("");
   };
 
   //! If user selected the single joke, then show the onelinkjkdiv
@@ -254,7 +253,6 @@ function SettingsCard() {
     // show the single line jk div
     setFullJoke(<Loading />);
     // show the placeholder text
-    console.log("i've been clicked");
   };
 
   return (
