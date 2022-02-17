@@ -42,6 +42,7 @@ export const JcWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
   margin-top: -7rem;
   @media (max-width: 500px) {
     padding-left: 1rem;
