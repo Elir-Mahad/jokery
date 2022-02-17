@@ -309,11 +309,17 @@ function SettingsCard() {
             <SetHeading> Choose a joke rating</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>General</OsName>
+                <OsNameIcon>
+                  <OsIcon src={goodicon} />
+                  <OsName>General</OsName>
+                </OsNameIcon>
                 <OsInput onClick={changeToCensored} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>R-rated</OsName>
+                <OsNameIcon>
+                  <OsIcon src={badicon} />
+                  <OsName>R-rated</OsName>
+                </OsNameIcon>
                 <OsInput onClick={changeToVulgar} type="checkbox" />
               </OneSet>
             </SetOptions>
