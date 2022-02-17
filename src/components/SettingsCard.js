@@ -39,8 +39,8 @@ import darkicon from "../assets/darkicon.png";
 import punicon from "../assets/punicon.png";
 import miscicon from "../assets/miscicon.png";
 //
-import generalicon from "../assets/g-rated-icon.png";
-import rratingicon from "../assets/r-rated-icon.png";
+import goodicon from "../assets/g-rated-icon.png";
+import badicon from "../assets/r-rated-icon.png";
 
 function SettingsCard() {
   // -------- PAGE SET UP
@@ -244,12 +244,18 @@ function SettingsCard() {
             <SetHeading> Choose a joke type</SetHeading>
             <SetOptions>
               <OneSet>
-                <OsName>Two part</OsName>
-                <OsInput onClick={showPunchDelJk} type="checkbox" />
+                <OsNameIcon>
+                  <OsIcon src={singleicon} />
+                  <OsName>Single</OsName>
+                </OsNameIcon>
+                <OsInput onClick={showFullJk} type="checkbox" />
               </OneSet>
               <OneSet>
-                <OsName>Single</OsName>
-                <OsInput onClick={showFullJk} type="checkbox" />
+                <OsNameIcon>
+                  <OsIcon src={twoparticon} />
+                  <OsName>Two part</OsName>
+                </OsNameIcon>
+                <OsInput onClick={showPunchDelJk} type="checkbox" />
               </OneSet>
             </SetOptions>
           </SetBox>
