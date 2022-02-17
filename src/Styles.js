@@ -195,7 +195,7 @@ export const SettingsPage = styled.div`
   z-index: 2;
   background-color: white;
   padding-top: 1rem;
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -207,17 +207,16 @@ export const SettingsPageHeading = styled.h2`
 
 export const SetBox = styled.div`
   width: 25rem;
-  @media (max-width: 500px) {
-    width: 100%;
+  @media (max-width: 450px) {
+    width: 95%;
   }
 `;
 
 export const SetHeading = styled.p`
-  color: darkblue;
   margin-bottom: 1.5rem;
   padding: 0.2rem;
   font-size: 1.5rem;
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     font-size: 1.3rem;
     padding-left: 1rem;
   }
@@ -240,7 +239,7 @@ export const OneSet = styled.div`
 
 export const OsName = styled.p`
   font-size: 1.2rem;
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     font-size: 1rem;
   }
 `;
@@ -254,8 +253,8 @@ export const SaveButtonBox = styled.div`
 `;
 
 export const SaveButton = styled.button`
-  // width: 100%;
-  background-color: lightgrey;
+  background-color: #5cbfe7;
+  color: white;
   border: 1px solid black;
   border-radius: 1rem;
   //
@@ -265,10 +264,10 @@ export const SaveButton = styled.button`
   font-size: 1.2rem;
   //
   cursor: pointer;
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     font-size: 1rem;
     height: 3rem;
-    width: 100%;
+    width: 95%;
   }
 `;
 
