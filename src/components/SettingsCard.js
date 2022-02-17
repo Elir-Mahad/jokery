@@ -239,6 +239,7 @@ function SettingsCard() {
     setJokeSetup("no joke here yet 1");
     // show the placeholder text
     setJokeDelivery("no joke here yet 2");
+    console.log("i've been clicked punch");
   };
 
   //! If user selected the single joke, then show the onelinkjkdiv
@@ -253,6 +254,7 @@ function SettingsCard() {
     // show the single line jk div
     setFullJoke(<Loading />);
     // show the placeholder text
+    console.log("i've been clicked");
   };
 
   return (
@@ -267,14 +269,22 @@ function SettingsCard() {
                   <OsIcon src={singleicon} />
                   <OsName>One liner</OsName>
                 </OsNameIcon>
-                <OsInput onClick={showFullJk} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={showFullJk} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={showFullJk} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={twoparticon} />
                   <OsName>Hook + punchline</OsName>
                 </OsNameIcon>
-                <OsInput onClick={showPunchDelJk} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={showPunchDelJk} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={showPunchDelJk} type="checkbox" /> */}
               </OneSet>
             </Bounce>
           </SetBox>
@@ -287,35 +297,63 @@ function SettingsCard() {
                   <OsIcon src={randomicon} />
                   <OsName>Random</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToAny} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={changeToAny} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToAny} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={programmingicon} />
                   <OsName>Programming</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToProgramming} type="checkbox" />
+                <div className="toogle">
+                  <input
+                    onClick={changeToProgramming}
+                    type="checkbox"
+                    id="switch"
+                  />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToProgramming} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={darkicon} />
                   <OsName>Dark</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToDark} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={changeToDark} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToDark} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={punicon} />
                   <OsName>Pun</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToPun} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={changeToPun} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToPun} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={miscicon} />
                   <OsName>Miscellaneous</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToMiscellaneous} type="checkbox" />
+                <div className="toogle">
+                  <input
+                    onClick={changeToMiscellaneous}
+                    type="checkbox"
+                    id="switch"
+                  />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToMiscellaneous} type="checkbox" /> */}
               </OneSet>
             </Bounce>
           </SetBox>
@@ -328,14 +366,26 @@ function SettingsCard() {
                   <OsIcon src={goodicon} />
                   <OsName>General</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToCensored} type="checkbox" />
+                <div className="toogle">
+                  <input
+                    onClick={changeToCensored}
+                    type="checkbox"
+                    id="switch"
+                  />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToCensored} type="checkbox" /> */}
               </OneSet>
               <OneSet>
                 <OsNameIcon>
                   <OsIcon src={badicon} />
                   <OsName>R-rated</OsName>
                 </OsNameIcon>
-                <OsInput onClick={changeToVulgar} type="checkbox" />
+                <div className="toogle">
+                  <input onClick={changeToVulgar} type="checkbox" id="switch" />
+                  <label for="switch"></label>
+                </div>
+                {/* <OsInput onClick={changeToVulgar} type="checkbox" /> */}
               </OneSet>
             </Bounce>
           </SetBox>
