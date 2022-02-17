@@ -29,11 +29,18 @@ import {
 // import { FiTwitter } from "react-icons/fi";
 import Axios from "axios";
 import Loading from "./Loading";
+//
+import singleicon from "../assets/singleicon.png";
+import twoparticon from "../assets/twoparticon.png";
+//
 import randomicon from "../assets/randomicon.png";
 import programmingicon from "../assets/programingicon.png";
 import darkicon from "../assets/darkicon.png";
 import punicon from "../assets/punicon.png";
 import miscicon from "../assets/miscicon.png";
+//
+import generalicon from "../assets/g-rated-icon.png";
+import rratingicon from "../assets/r-rated-icon.png";
 
 function SettingsCard() {
   // -------- PAGE SET UP
