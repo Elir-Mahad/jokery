@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const WholeApp = styled.div`
   // position: relative;
+  background-color: #fcfdfd;
 `;
 
 //  Header
@@ -11,15 +12,17 @@ export const HeaderBox = styled.div`
   padding-bottom: 8rem;
   padding-top: 2rem;
   position: relative;
-  background-color: lightgrey;
+  background-color: #9ed6b6;
 `;
 
 export const Heading = styled.h2`
   text-align: center;
   position: relative;
   top: 12px;
+  font-weight: 100;
+  font-size: 2rem;
   @media (max-width: 500px) {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -32,6 +35,7 @@ export const JokecardBox = styled.div`
   // margin-top: -3rem;
   position: relative;
   z-index: 2;
+  // background-color: red;
 `;
 
 export const JcWrapper = styled.div`
@@ -48,7 +52,7 @@ export const JcWrapper = styled.div`
 export const JcHead = styled.div`
   //
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 21.4rem;
   height: 4.4rem;
   border-radius: 2rem;
@@ -59,7 +63,7 @@ export const JcHead = styled.div`
 `;
 
 export const JokeNicons = styled.div`
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 1.5rem;
   width: 20rem;
   min-height: 25rem;
@@ -123,7 +127,7 @@ export const JokeText = styled.p`
 export const JcBottom = styled.div`
   //
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 21.4rem;
   height: 4.4rem;
   border-radius: 2rem;
@@ -150,6 +154,7 @@ export const ShowJoke = styled.button`
   border: 1px solid black;
   font-size: 1.2rem;
   cursor: pointer;
+  background-color: #feae84;
   @media (max-width: 500px) {
     font-size: 1rem;
     height: 3rem;
@@ -167,6 +172,8 @@ export const Reset = styled.button`
   border-radius: 2rem;
   border: 1px solid black;
   cursor: pointer;
+  background-color: #5cbfe7;
+  color: white;
   @media (max-width: 500px) {
     font-size: 1rem;
     height: 3rem;
