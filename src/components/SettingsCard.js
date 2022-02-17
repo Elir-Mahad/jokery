@@ -44,7 +44,8 @@ import goodicon from "../assets/g-rated-icon.png";
 import badicon from "../assets/r-rated-icon.png";
 //
 import Bounce from "react-reveal/Bounce";
-
+import Fade from "react-reveal/Fade";
+//
 function SettingsCard() {
   // -------- PAGE SET UP
 
@@ -347,51 +348,53 @@ function SettingsCard() {
       {/*  */}
       {jokeContainer && (
         <JokecardBox>
-          <JcWrapper>
-            <JcHead></JcHead>
-            <JokeNicons>
-              <JokeWords>
-                {twoLineJk && (
-                  <JokeSetupDelivery>
-                    <JokeText>
-                      <span
-                        className="joketext"
-                        onAnimationEnd={() => setWobble(0)}
-                        wobble={wobble}
-                      >
-                        <JtIcon src={twoparticon} /> {jokeSetup} <br />
-                        <JtIcon
-                          style={{
-                            paddingTop: "2rem",
-                          }}
-                          src={singleicon}
-                        />
-                        {jokeDelivery}
-                      </span>
-                    </JokeText>
-                  </JokeSetupDelivery>
-                )}
-                {oneLineJk && (
-                  <JokeFullOneLine>
-                    <JokeText>
-                      <span
-                        className="joketext"
-                        onAnimationEnd={() => setWobble(0)}
-                        wobble={wobble}
-                      >
-                        <JtIcon src={singleicon} />
-                        {fullJoke}
-                      </span>
-                    </JokeText>
-                  </JokeFullOneLine>
-                )}
-              </JokeWords>
-              {/* <JokeIcon>
+          <Fade duration={3000}>
+            <JcWrapper>
+              <JcHead></JcHead>
+              <JokeNicons>
+                <JokeWords>
+                  {twoLineJk && (
+                    <JokeSetupDelivery>
+                      <JokeText>
+                        <span
+                          className="joketext"
+                          onAnimationEnd={() => setWobble(0)}
+                          wobble={wobble}
+                        >
+                          <JtIcon src={twoparticon} /> {jokeSetup} <br />
+                          <JtIcon
+                            style={{
+                              paddingTop: "2rem",
+                            }}
+                            src={singleicon}
+                          />
+                          {jokeDelivery}
+                        </span>
+                      </JokeText>
+                    </JokeSetupDelivery>
+                  )}
+                  {oneLineJk && (
+                    <JokeFullOneLine>
+                      <JokeText>
+                        <span
+                          className="joketext"
+                          onAnimationEnd={() => setWobble(0)}
+                          wobble={wobble}
+                        >
+                          <JtIcon src={singleicon} />
+                          {fullJoke}
+                        </span>
+                      </JokeText>
+                    </JokeFullOneLine>
+                  )}
+                </JokeWords>
+                {/* <JokeIcon>
                 <FiTwitter />
               </JokeIcon> */}
-            </JokeNicons>
-            <JcBottom></JcBottom>
-          </JcWrapper>
+              </JokeNicons>
+              <JcBottom></JcBottom>
+            </JcWrapper>
+          </Fade>
           <ShowJoke onClick={getJoke}>
             {/*  */}
             {tempText && <span>Show me a programming joke</span>}
