@@ -167,7 +167,7 @@ export const ShowJoke = styled.button`
     height: 3rem;
   }
   @media (max-width: 400px) {
-    width: 95%;
+    width: 80%;
   }
 `;
 
@@ -186,7 +186,7 @@ export const Reset = styled.button`
     height: 3rem;
   }
   @media (max-width: 400px) {
-    width: 95%;
+    width: 80%;
   }
 `;
 
