@@ -41,6 +41,7 @@ import miscicon from "../assets/miscicon.png";
 //
 import goodicon from "../assets/g-rated-icon.png";
 import badicon from "../assets/r-rated-icon.png";
+//
 
 function SettingsCard() {
   // -------- PAGE SET UP
@@ -182,6 +183,10 @@ function SettingsCard() {
   );
   // This will store the full joke for single jokes
 
+  const [wobble, setWobble] = useState(0);
+  // This is the animation on the joke text
+  // It will get triggered when the getJoke function is triggered below
+
   //! Fetch api data and store end points in the correct constants
 
   const getJoke = () => {
@@ -193,6 +198,7 @@ function SettingsCard() {
       setJokeDelivery(response.data.delivery);
       setFullJoke(response.data.joke);
       setJokeCat(response.data.category);
+      setWobble(1);
     });
   };
   // console.log(jokeCat);
@@ -341,13 +347,29 @@ function SettingsCard() {
               <JokeWords>
                 {twoLineJk && (
                   <JokeSetupDelivery>
-                    <JokeText>{jokeSetup}</JokeText>
-                    <JokeText>{jokeDelivery}</JokeText>
+                    <JokeText>
+                      <span
+                        className="joketext"
+                        onAnimationEnd={() => setWobble(0)}
+                        wobble={wobble}
+                      >
+                        {jokeSetup} <br />
+                        {jokeDelivery}
+                      </span>
+                    </JokeText>
                   </JokeSetupDelivery>
                 )}
                 {oneLineJk && (
                   <JokeFullOneLine>
-                    <JokeText>{fullJoke}</JokeText>
+                    <JokeText>
+                      <span
+                        className="joketext"
+                        onAnimationEnd={() => setWobble(0)}
+                        wobble={wobble}
+                      >
+                        {fullJoke}
+                      </span>
+                    </JokeText>
                   </JokeFullOneLine>
                 )}
               </JokeWords>
